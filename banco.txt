@@ -1,0 +1,61 @@
+create database tec_hort;
+
+use tec_hort;
+
+create table horta (id_horta int not null primary key auto_increment, fq_name varchar(50), fq_email varchar(50));
+insert into horta (fq_name, fq_email) values ('admin','123');
+
+select * from horta;
+
+create table umid (id_umid int not null primary key auto_increment, hora time, nivel varchar(4));
+insert into umid (hora, nivel) values ('01:00','850');
+insert into umid (hora, nivel) values ('02:00','850');
+insert into umid (hora, nivel) values ('03:00','850');
+insert into umid (hora, nivel) values ('04:00','850');
+insert into umid (hora, nivel) values ('05:00','850');
+insert into umid (hora, nivel) values ('06:00','850');
+insert into umid (hora, nivel) values ('07:00','850');
+insert into umid (hora, nivel) values ('08:00','850');
+insert into umid (hora, nivel) values ('09:00','850');
+insert into umid (hora, nivel) values ('10:00','850');
+insert into umid (hora, nivel) values ('11:00','850');
+insert into umid (hora, nivel) values ('12:00','850');
+insert into umid (hora, nivel) values ('13:00','850');
+insert into umid (hora, nivel) values ('14:00','850');
+insert into umid (hora, nivel) values ('15:00','850');
+insert into umid (hora, nivel) values ('16:00','850');
+insert into umid (hora, nivel) values ('17:00','850');
+insert into umid (hora, nivel) values ('18:00','850');
+insert into umid (hora, nivel) values ('19:00','850');
+insert into umid (hora, nivel) values ('20:00','850');
+insert into umid (hora, nivel) values ('21:00','850');
+insert into umid (hora, nivel) values ('22:00','850');
+insert into umid (hora, nivel) values ('23:00','850');
+insert into umid (hora, nivel) values ('24:00','850');
+
+select * from umid;
+
+update umid set nivel = '500' where id_umid='1';
+update umid set nivel = '650' where id_umid='2';
+update umid set nivel = '800' where id_umid='3';
+update umid set nivel = '550' where id_umid='4';
+update umid set nivel = '890' where id_umid='5';
+update umid set nivel = '700' where id_umid='6';
+update umid set nivel = '680' where id_umid='7';
+update umid set nivel = '530' where id_umid='8';
+update umid set nivel = '800' where id_umid='9';
+update umid set nivel = '900' where id_umid='10';
+update umid set nivel = '600' where id_umid='11';
+update umid set nivel = '800' where id_umid='12';
+update umid set nivel = '650' where id_umid='13';
+update umid set nivel = '860' where id_umid='14';
+update umid set nivel = '450' where id_umid='15';
+update umid set nivel = '980' where id_umid='16';
+update umid set nivel = '740' where id_umid='17';
+update umid set nivel = '860' where id_umid='18';
+update umid set nivel = '340' where id_umid='19';
+update umid set nivel = '750' where id_umid='20';
+update umid set nivel = '890' where id_umid='21';
+update umid set nivel = '680' where id_umid='22';
+update umid set nivel = '500' where id_umid='23';
+update umid set nivel = '430' where id_umid='24';
